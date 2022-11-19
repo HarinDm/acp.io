@@ -14,7 +14,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
             foreach($slider as $slide) : ?>
                 <div class="smi-block-container">
                     <div class="smi-block-container-item">
-             
+                        <?php/*TODO: IF ELSE video OR article & add link*/?>
                         <div class="smi-block-container__video">
                             <video class="page__img" poster="<?php echo $slide['media']; ?>" src=""></video>
                             <div class="smi-block-container__video-description">
