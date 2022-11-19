@@ -3,7 +3,6 @@
 global $fieldsACF;
 $fieldsACF =  [
 	'_banner',
-	'_template',
 	'_banner-info',
 	'_about',
 	'_emotions',
