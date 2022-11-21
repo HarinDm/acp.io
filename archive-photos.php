@@ -5,7 +5,11 @@
 		<div class="wrapper">
 			<a class="page__on-main page__on-main_yellow" href="../">На главную </a>
 			<h1 class="page__title-h1 page__title-h1_text-shadow_white"><span>смотрите <br></span><span>как ЭМОЦИОНАЛЬНО</span></h1>
-			<div class="page-nav">
+			<?php /* wp_nav_menu(array(
+							'theme_location' => 'secondary', 
+							'fallback_cb' => 'fallback_menu_pages' 
+							)); */ ?>
+            <?/*<div class="page-nav">
 				<button class="page__btn page__btn_gray-yellow is-active">Наши игры</button>
 				<button class="page__btn page__btn_gray-yellow">Битва Корпораций</button>
 			</div>
@@ -18,6 +22,7 @@
 				<button class="page__btn page__btn_gray-yellow is-active">Ереван</button>
 				<button class="page__btn page__btn_gray-yellow">Ташкент</button>
 			</div>
+            */?>
 
             <!--_sliderGallery-->
 			<?php /*include(TEMPLATEPATH . "/components/_sliderGallery/_sliderGallery.php");*/?>

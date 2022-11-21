@@ -11,12 +11,45 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
     <div class="page-items" id="sliderSmi">
             <?php 	
             if(!empty($slider )) :
-            foreach($slider as $slide) : ?>
+            foreach($slider as $slide) : 
+            
+            ?>
                 <div class="smi-block-container">
                     <div class="smi-block-container-item">
                         <?php/*TODO: IF ELSE video OR article & add link*/?>
-                        <div class="smi-block-container__video">
-                            <video class="page__img" poster="<?php echo $slide['media']; ?>" src=""></video>
+                        
+                        <?php 	
+                                if(!empty($slide['smiItems'] )) :
+                                foreach($slide['smiItems'] as $smiItem) : ?>
+                        
+                        <?php if(!empty($smiItem['link-article'])) : ?>
+                            <div class="smi-block-container__article">
+                                <a href="<?php echo $smiItem['link-article']?>" class="page__link">
+                                    <img class="page__img" src="<?php echo $smiItem['media']; ?>">
+                                    <p class="page__text"><?php echo $smiItem['date']; ?></p>
+                                    <p class="page__text"><?php echo $smiItem['title']; ?></p>
+                                    <p class="page__text"><?php echo $smiItem['subtitle']; ?></p> 
+                                </a>
+                                                             
+                            </div>
+                        <?php else: ?>
+                            <div class="smi-block-container__video">
+                                <video class="page__img" poster="" src="<?php echo $smiItem['link-video']; ?>"></video>
+                                <div class="smi-block-container__video-description">
+                                    <p class="page__text page__text_yellow date"><?php echo $smiItem['date']; ?></p>
+                                    <p class="page__text page__text_white name"><?php echo $smiItem['title']; ?></p>
+                                    <p class="page__text page__text_white name"><?php echo $smiItem['subtitle']; ?></p>
+                                </div>
+                            </div>    
+                        <?php endif;?>
+
+                        <?php endforeach;
+                    endif; ?> 
+
+
+                                    <!-- ---Work Version--- -->
+                        <!-- <div class="smi-block-container__video">
+                            <video class="page__img" poster="<?php /*echo $slide['media']; ?>" src=""></video>
                             <div class="smi-block-container__video-description">
                                 <p class="page__text page__text_yellow date"><?php echo $slide ['date']; ?></p>
                                 <p class="page__text page__text_white name"><?php echo $slide['title']; ?></p>
@@ -28,8 +61,10 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                             <img class="page__img" src="<?php echo $slide['media2']; ?>">
                             <p class="page__text"><?php echo $slide['date2']; ?></p>
                             <p class="page__text"><?php echo $slide['title2']; ?></p>
-                            <p class="page__text"><?php echo $slide['subtitle2']; ?></p>
-                        </div>
+                            <p class="page__text"><?php echo $slide['subtitle2']; */?></p>
+                        </div> -->
+                                    <!-- ---Work Version--- -->
+
                     </div>
                 </div>
             <?php endforeach; 

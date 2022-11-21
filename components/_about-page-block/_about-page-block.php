@@ -24,16 +24,15 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                 <?php endforeach; 
                     endif;
                 ?>
-                <!-- <div class="page__img"><img src="assets/img/img-about-page.png" alt=""></div>
-                <div class="page__img"><img src="assets/img/img-about-page.png" alt=""></div>
-                <div class="page__img"><img src="assets/img/img-about-page.png" alt=""></div>
-                <div class="page__img"><img src="assets/img/img-about-page.png" alt=""></div> -->
             </div>
             <div class="slider-thumbnails" id="customizeThumbnailsInfoSlider">
-                <div class="page__img_small"></div>
-                <div class="page__img_small"></div>
-                <div class="page__img_small"></div>
-                <div class="page__img_small"></div>
+            <?php 
+                if(!empty($slider )) :
+                foreach($slider as $slide) : ?>
+                    <div class="page__img_small"></div>
+            <?php endforeach; 
+                endif;
+            ?>
             </div>
         </div>
         <?php endif; ?>
@@ -49,18 +48,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 			<?php endforeach; 
 				endif;
 			?>
-            <!-- <div class="block-infoSlider__item"><span class="page__number">7</span>
-                <p class="page__text">лет — приличный опыт</p>
             </div>
-            <div class="block-infoSlider__item"><span class="page__number">5</span>
-                <p class="page__text">стран</p>
-            </div>
-            <div class="block-infoSlider__item"><span class="page__number">500+</span>
-                <p class="page__text">игр</p>
-            </div>
-            <div class="block-infoSlider__item"><span class="page__number">200+</span>
-                <p class="page__text">корпоративов</p>
-            </div> -->
         </div>
         <?php endif; ?>
     </div>

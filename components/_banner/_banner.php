@@ -49,10 +49,6 @@ $slider = $fieldsACF['slider']; // array - массив /  если массив
 						<?php endforeach; 
 							endif;
 						?>
-						<!-- <div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-1.png"></div>
-						<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-2.png"></div>
-						<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-3.png"></div>
-						<div class="page__img"><img class="tns-lazy-img" data-src="assets/img/img-banner-4.png"></div> -->
 					</div>
 				</div>
 				<div class="banner-block-img__preview">
@@ -66,10 +62,6 @@ $slider = $fieldsACF['slider']; // array - массив /  если массив
 						<?php endforeach; 
 						endif;
 						?>
-						<!-- <div class="page__img_small"><img src="assets/img/img-banner-1.png"></div>
-						<div class="page__img_small"><img src="assets/img/img-banner-small-1.png"></div>
-						<div class="page__img_small"><img src="assets/img/img-banner-small-2.png"></div>
-						<div class="page__img_small"><img src="assets/img/img-banner-small-3.png"></div> -->
 					</div>
 				</div>
 			</div>

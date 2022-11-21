@@ -1,10 +1,19 @@
 <?php
 /**
  * Модальная галерея
+ * TODO: инструкция Важно добавить блок на страницу Блок будет отображаться только после того, как добавится на страницу в wp 
  */
 $blockACF = get_field('_modal-gallery');
+/* если блок не будет добавлен в wp ИИ НЕ проставлена галочка "отоброжать на странице" то код ниже не будет исполняться  */
 if (!empty($blockACF) && $blockACF["isShow"]) :
+    // HOTFIX:!!! get_field
+    $blockACF = get_field('_block-single-phostos');
+
+    $fieldsACF = $blockACF['fields'];
+    $images = $fieldsACF['images'];  // array
 ?>
+
+
 
 <section class="modal modal-gallery page_hidden" id="modal-gallery">
     <div class="modal-container">
@@ -25,27 +34,23 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                 <div class="modal__content-img-big">
                     <div class="btn-play page_hidden"></div>
                     <div id="sliderModalGallery">
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                        <div class="page__img"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
+                        <?php 	
+                            if(!empty($images )) :
+                            foreach($images as $image) : ?>
+                            <div class="page__img"><img src="<?php echo $image['photo']; ?>" alt=""></div>
+                            <?php endforeach; 
+                                endif;
+                            ?>
                     </div>
                 </div>
             </div>
             <div class="modal__content-img-preview">
                 <div class="slider-thumbnails" id="customizeThumbnailsModalGallery">
+                    <?php 	
+                    if(!empty($images )) :
+                    foreach($images as $image) : ?>
+                    <div class="page__img_small"><img src="<?php echo $image['photo']; ?>" alt=""></div>
+                    <!-- <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
@@ -59,9 +64,11 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
                     <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
+                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div> -->
+                <?php endforeach; 
+                                endif;
+                            ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -39,18 +39,18 @@ slides[повторитель]
                                 }else{
                                     $src = $slide2['video']; 
                                 }*/ 
-                                $src = (!empty($slide2['link'])) ? $slide2['link'] : $slide2['video'];                                
+                                // $src = (!empty($slide2['link'])) ? $slide2['link'] : $slide2['video'];
+                                $iframe = 'code';                                
                             ?>
-                            <div class="page__img">
-                                <video data-url="" poster="<?php echo $slide2['poster']; ?>" src="<?php echo $src; ?>"></video>
-                            <?php /*
-                                <?php if(!empty($slide2['link'])) :?>
-                                    <video poster="<?php echo $slide2['poster']; ?>" src="<?php echo $slide2['link']; ?>"></video>
-                                <?php else:?>
-                                    <video poster="<?php echo $slide2['poster']; ?>" src="<?php echo $slide2['video']; ?>"></video>
-                                <?php endif;?>
-                                */?>
-                            </div>
+                            <?php if(!empty($slide2['link'])): ?>
+                                    <iframe class="page__img" src="<?php echo $slide2['link']; ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                            <?php else: ?>
+                                <a class="page__img" href="<?php echo $slide2['video']; ?>" target="_blank"> 
+                                    <video auloplay poster="<?php echo $slide2['poster']; ?>" src="<?php echo $slide2['video']; ?>"></video>
+                                </a>
+                            <?php endif;?>
+                              
+                          
                             <?php endforeach; 
                         endif; ?>  
                     </div>

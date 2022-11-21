@@ -12,12 +12,9 @@ get_header();?>
 			<!--_block-titles-->
 			<?php include(TEMPLATEPATH . "/components/_block-titles/_block-titles.php");?>
 			<!--_block-titles-->
-				<div class="team-block__description">
-					<p class="page__text"><?php the_content(); ?></p>
-				</div>
-				<!--team-block-items-->
-				<?php include(TEMPLATEPATH . "/components/_team-block-items/_team-block-items.php");?>
-				<!--team-block-items-->
+			<!--team-block-items-->
+			<?php include(TEMPLATEPATH . "/components/_team-block-items/_team-block-items.php");?>
+			<!--team-block-items-->
 			</div>
 		</div>
 		<!-- blockquote -->
@@ -31,5 +28,7 @@ get_header();?>
 	<!-- modal-team -->
 	<?php include(TEMPLATEPATH . "/components/_modal-team/_modal-team.php");?>
 	<!-- modal-team -->
+	
+	<script src="js/team-append-content.js"></script>
 </div>	
 <?php get_footer(''); ?>

@@ -5,16 +5,17 @@
 $blockACF = get_field('_block-single-phostos');
 if (!empty($blockACF) && $blockACF["isShow"]) :
     $fieldsACF = $blockACF['fields'];
-    $album = $fieldsACF['album'];
+    $images = $fieldsACF['images'];
     
 ?>
-<?php if(!empty($album )) : ?>
 <div class="page-items">
     <?php 	
-    if(!empty($album )) :
-    foreach($album as $album) : ?>
+    if(!empty($images )) :
+    foreach($images as $image) : ?>
     <div class="page-item">
-        <div class="page__img"><img src="<?php echo $album ['photo'] ?>"></div>
+        <div class="page__img"  data-slug="cat" data-fancybox="gallery" href="<?php echo $image['photo']; ?>">
+            <img src="<?php echo $image['photo']; ?>">
+        </div>
         <div class="page-item_bg open-modal" data-modal="modal-gallery"></div>
     </div>
     <?php endforeach; 
@@ -40,6 +41,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 </div>
 <?php endif; ?>
 
-<?php endif; ?>
+
 
 

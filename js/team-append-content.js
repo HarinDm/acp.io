@@ -1,4 +1,5 @@
 
+// TODO: cделать проверку на клик 
 function appendContent(e){
     let el = e.target;
     if (el.classList.contains('open-modal')) {
