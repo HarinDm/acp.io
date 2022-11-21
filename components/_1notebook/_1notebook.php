@@ -1,6 +1,36 @@
 
 
 
+	<!-- <h2 class="page__title-h2"> <?= $titleACF; ?></h2>  -->
+    <h2 class="page__title-h2"> <?php echo $titleACF; ?></h2> 
+			<p></p>
+			<!--foreach-->
+			<!--<div class="page__text hide">
+				<div class="page_yellow">25 Октября</div>
+				<div class="city">Ереван</div>
+				<div class="game-name">Угадать за 60 секунд</div>
+			</div>-->
+			<!--foreach-->
+
+<!-- 
+slides[повторитель]
+    -slides[повторитель]
+        -slide[поля]
+    -slide
+        -item
+    -slide -->
+
+
+     <!-- if(!empty($slide2['link'])){
+                                    $src = $slide2['link']; 
+                                }else{
+                                    $src = $slide2['video']; 
+                                }*/ 
+                                // $src = (!empty($slide2['link'])) ? $slide2['link'] : $slide2['video']; -->
+
+
+    
+
 
 
 <?php/* if(!empty($titleGray)) :?>

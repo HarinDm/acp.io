@@ -21,9 +21,11 @@ if(!empty($fieldsACF['link']['url'])) :
     </section>
 </a>
 
-<?php 
+<?php
+
 endif; 
 endif; 
+
 ?>
 
 

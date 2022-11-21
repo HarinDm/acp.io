@@ -8,12 +8,14 @@ $blockACF = get_field('_modal-gallery');
 if (!empty($blockACF) && $blockACF["isShow"]) :
     // HOTFIX:!!! get_field
     $blockACF = get_field('_block-single-phostos');
+    $galleryPreviewACF = get_field('_gallery-preview');
 
     $fieldsACF = $blockACF['fields'];
-    $images = $fieldsACF['images'];  // array
+    $images = $fieldsACF['images'];
+    $name = $fieldsACF['name'];
+    $date = $galleryPreviewACF['fields']['date'];
+    $Description = $galleryPreviewACF['fields']['Description'];
 ?>
-
-
 
 <section class="modal modal-gallery page_hidden" id="modal-gallery">
     <div class="modal-container">
@@ -22,9 +24,9 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
         </div>
         <div class="modal__content">
             <div class="modal__content-text">
-                <h2 class="page__title-h2">ЕРЕВАН</h2>
-                <div class="page__text date">25 ОКТ 2020</div>
-                <div class="page__text">Угадать за 60 секунд</div>
+                <h2 class="page__title-h2"><?php echo $name; ?></h2>
+                <div class="page__text date"><?php echo $date; ?></div>
+                <div class="page__text"><?php echo $Description; ?></div>
             </div>
             <div class="modal__content-img">
                 <div class="slider__actions">
@@ -50,21 +52,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                     if(!empty($images )) :
                     foreach($images as $image) : ?>
                     <div class="page__img_small"><img src="<?php echo $image['photo']; ?>" alt=""></div>
-                    <!-- <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-1.png" alt=""></div>
-                    <div class="page__img_small"><img src="assets/img/img-modal-gallery-2.png" alt=""></div> -->
                 <?php endforeach; 
                                 endif;
                             ?>

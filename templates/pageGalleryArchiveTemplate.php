@@ -6,7 +6,7 @@ get_header();?>
 <div>
     <main class="page sample-page gallery-page info-page">
 		<div class="wrapper">
-			<a class="page__on-main page__on-main_yellow" href="http://acpgame.io/">На главную </a>
+			<a class="page__on-main page__on-main_yellow" href="/">На главную </a>
 			<h1 class="page__title-h1 page__title-h1_text-shadow_white"><span>смотрите <br></span><span>как ЭМОЦИОНАЛЬНО</span></h1>
 			<div class="page-nav">
 				<button class="page__btn page__btn_gray-yellow is-active">Наши игры</button>

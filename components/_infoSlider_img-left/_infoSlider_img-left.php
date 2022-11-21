@@ -38,8 +38,8 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
         </div>
         <?php endif; ?>
         <div class="block-infoSlider__info block-infoSlider__rigth">
-            <h3 class="page__title-h3"><?php echo $title2 ?></h3>
-            <p class="page__text"><?php echo $subtitle ?></p>
+            <h3 class="page__title-h3"><?php echo $title2; ?></h3>
+            <p class="page__text"><?php echo $subtitle; ?></p>
             <button class="page__btn open-modal" data-modal="modal-callback">Принять участие </button>
         </div>
         

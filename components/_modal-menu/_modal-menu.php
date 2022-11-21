@@ -23,34 +23,34 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 				<div class="page__img"><a href="../"><img src="assets/img/logo-big.png" alt=""></a></div>
 				<nav class="page__nav">
 				<?php 	
-					if(!empty($links )) :
+					if(!empty($links)) :
 					foreach($links as $link) : ?>
-					<a class="page__link" href="<?php echo $link ['link']; ?>"><?php echo $link ['name-link']; ?></a>
+					<a class="page__link" href="<?php echo $link['link']; ?>"><?php echo $link['name-link']; ?></a>
 					<?php endforeach; 
 						endif;
 					?>
 					<ul class="page__lists">
 						<?php 	
-							if(!empty($linksGames )) :
-							foreach($linksGames as $linksGame) : ?>
-						<li class="page__list"> <a class="page__link" href="<?php echo $linksGame ['link']; ?>"><?php echo $linksGame ['name-link']; ?></a></li>
+							if(!empty($linksGames)) :
+							foreach($linksGames as $linksGame) :?>
+						<li class="page__list"> <a class="page__link" href="<?php echo $linksGame['link']; ?>"><?php echo $linksGame['name-link']; ?></a></li>
 						<?php endforeach; 
 							endif;
 						?>
 					</ul>
 					<?php 	
-					if(!empty($linksBottom )) :
+					if(!empty($linksBottom)) :
 					foreach($linksBottom as $linksBottom) : ?>
-					<a class="page__link" href="<?php echo $linksBottom ['link']; ?>"><?php echo $linksBottom ['name-link']; ?></a>
+					<a class="page__link" href="<?php echo $linksBottom['link']; ?>"><?php echo $linksBottom['name-link']; ?></a>
 					<?php endforeach; 
 						endif;
 					?>
 				</nav>
 				<div class="page__links">
 				<?php 	
-					if(!empty($phone )) :
+					if(!empty($phone)) :
 					foreach($phone as $phone) : ?>
-					<a class="page__link" href="tel:+7 (495) 941-83-25"><?php echo $phone ['number-phone']; ?></a>
+					<a class="page__link" href="tel:+7 (495) 941-83-25"><?php echo $phone['number-phone']; ?></a>
 					<?php endforeach; 
 						endif;
 					?>
@@ -62,9 +62,9 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 			</div>
 			<div class="modal__content-info">
 				<?php 	
-					if(!empty($photosModal )) :
+					if(!empty($photosModal)) :
 					foreach($photosModal as $photosModal) : ?>
-				<div class="page__img"><img src="<?php echo $photosModal ['photo']; ?>" alt=""></div>
+				<div class="page__img"><img src="<?php echo $photosModal['photo']; ?>" alt=""></div>
 				<?php endforeach; 
 					endif;
 				?>

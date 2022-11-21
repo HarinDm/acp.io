@@ -8,7 +8,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 	$fieldsACF = $blockACF['fields'];
 	$title = $fieldsACF['title'];
 	$subtitle = $fieldsACF['subtitle'];
-	$slider = $fieldsACF['slider']
+	$slider = $fieldsACF['slider'];
 ?>
 
 <section class="emotions">
@@ -16,10 +16,8 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 		<div class="emotions-block">
 			<div class="emotions-block-content">
 				<div class="emotions-block-content__text">
-					<h3 class="page__title-h3"><?php echo $title ?></h3>
-					<p class="page__text"><?php echo $subtitle ?></p>
-					<!-- <h3 class="page__title-h3">Свежие эмоции</h3>
-					<p class="page__text">Мы стараемся фотоотчетами передать атмосферу наших мероприятий. Удается нам это или нет, вы сможете решить сами.</p> -->
+					<h3 class="page__title-h3"><?php echo $title; ?></h3>
+					<p class="page__text"><?php echo $subtitle; ?></p>
 				</div>
 				<button class="page__btn page__btn_yellow">Смотреть все фото</button>
 			</div>
@@ -35,9 +33,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 							<?php endforeach; 
 								endif;
 							?>
-						<!-- <div class="page__img"><img src="assets/img/img-emotions-big.png"></div>
-						<div class="page__img"><img src="assets/img/img-emotions-2.jpg"></div>
-						<div class="page__img"><img src="assets/img/img-emotions-3.jpg"></div> -->
 					</div>
 				</div>
 				<div class="emotions-block-img__preview">
@@ -50,10 +45,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 							<?php endforeach; 
 								endif;
 						?>
-
-						<!-- <div class="page__img_small"><img src="assets/img/img-emotions-big.png"></div>
-						<div class="page__img_small"><img src="assets/img/img-emotions-2.jpg"></div>
-						<div class="page__img_small"><img src="assets/img/img-emotions-3.jpg"></div> -->
 					</div>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ get_header();?>
 <div>
 	<main class="page sample-page team">
 		<div class="wrapper">
-			<a class="page__on-main" href="http://acpgame.io/">На главную </a>
+			<a class="page__on-main" href="/">На главную </a>
 			
 			<div class="team-block">
 			<!--_block-titles-->
@@ -18,7 +18,6 @@ get_header();?>
 			</div>
 		</div>
 		<!-- blockquote -->
-		<!-- Тим-билдинги, клиентские мероприятия в нестандартном формате. -->
 		<?php include(TEMPLATEPATH . "/components/_blockquote/_blockquote.php");?>
 		<!-- blockquote -->		
 		<!--_next-section-->

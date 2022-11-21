@@ -8,17 +8,17 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 	$title = $fieldsACF['title'];
 	$subtitle = $fieldsACF['subtitle'];
 	$slider = $fieldsACF['slider'];
-	$image = $fieldsACF['image']
+	$image = $fieldsACF['image'];
 ?>
 
 <section class="games">
 	<div class="wrapper">
 		<div class="games-block">
-			<div class="games-block-img"><img class="page__img" src="<?php echo $image ?>"></div>
+			<div class="games-block-img"><img class="page__img" src="<?php echo $image; ?>"></div>
 			<div class="games-block-content">
 				<div class="games-block-content-format">
-					<h3 class="page__title-h3"><?php echo $title ?></h3>
-					<p class="page__text"><?php echo $subtitle ?></p>
+					<h3 class="page__title-h3"><?php echo $title; ?></h3>
+					<p class="page__text"><?php echo $subtitle; ?></p>
 				</div>
 				<?php if(!empty($slider )) : ?>
 				<div class="games-block-content-format-slider">

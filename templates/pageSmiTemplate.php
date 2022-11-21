@@ -6,7 +6,7 @@ get_header();?>
 <div>
 	<main class="page sample-page smi">
 		<div class="wrapper">
-			<a class="page__on-main page__on-main_yellow" href="http://acpgame.io/">На главную </a>
+			<a class="page__on-main page__on-main_yellow" href="/">На главную </a>
 			<!--_block-titles-->
 			<?php include(TEMPLATEPATH . "/components/_block-titles/_block-titles.php");?>
 			<!--_block-titles-->

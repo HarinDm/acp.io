@@ -9,8 +9,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="blockquote">
-    <p class="page__text"><?php echo $title ?></p>
-    <!-- <p class="page__text">Мы приглашаем к участию  новых интересных людей из мира бизнеса.</p> -->
+    <p class="page__text"><?php echo $title; ?></p>
 </section>
 
 <?php endif; ?>

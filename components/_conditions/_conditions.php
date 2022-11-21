@@ -12,7 +12,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 
 <section class="conditions">
     <div class="wrapper">
-        <h3 class="page__title-h3"><?php echo $title ?></h3>
+        <h3 class="page__title-h3"><?php echo $title; ?></h3>
         <div class="block-infoSlider">
             <div class="block-infoSlider__info block-infoSlider__left">
                 <?php 

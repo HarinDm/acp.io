@@ -13,8 +13,8 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 			<?php include(TEMPLATEPATH . "/components/_block-titles/_block-titles.php");?>
 	<!--_block-titles-->
     <div class="page-block__description">
-        <p class="page__text"><?php echo $paragraph1 ?></p>
-        <p class="page__text page__text_bottom"><?php echo $paragraph2 ?></p>
+        <p class="page__text"><?php echo $paragraph1; ?></p>
+        <p class="page__text page__text_bottom"><?php echo $paragraph2; ?></p>
     </div>
 </div>
 <?php endif; ?>

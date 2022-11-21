@@ -5,7 +5,7 @@
 get_header();?>
 <div>
 	<main class="page sample-page games-of-corparations info-page">
-		<div class="wrapper"><a class="page__on-main" href="http://acpgame.io/">На главную </a>
+		<div class="wrapper"><a class="page__on-main" href="/">На главную </a>
 			
 			<!--Блок абзацы-->
 			<?php include(TEMPLATEPATH . "/components/_block-paragraphs/_block-paragraphs.php");?>
@@ -16,7 +16,6 @@ get_header();?>
 			<!--infoSlider-->
 
 			<!--blockquote-->
-			<!-- Тим-билдинги, клиентские мероприятия в нестандартном формате. -->
 			<?php include(TEMPLATEPATH . "/components/_blockquote/_blockquote.php");?>
 			<!--blockquote-->
 		</div>
@@ -25,7 +24,6 @@ get_header();?>
 		<!--_next-section-->
 	</main>
 	<!-- modal-callback -->
-	<!-- <h3 class="page__title-h3">Корпоративная игра</h3> -->
 	<?php include(TEMPLATEPATH . "/components/_modal-callback/_modal-callback.php");?>
 	<!-- modal-callback -->
 </div>

@@ -21,7 +21,7 @@
 
 					<div class="footer-block__col">
 						<a class="page__link" href="#">О нас</a>
-						<a class="page__link" href="templates/pageTeamTemplate.php">Команда</a>
+						<a class="page__link" href="">Команда</a>
 						<a class="page__link" href="#">Фотоотчеты</a>
 						<a class="page__link" href="#">Контакты</a>
 						<a class="page__link" href="#">СМИ о нас</a>

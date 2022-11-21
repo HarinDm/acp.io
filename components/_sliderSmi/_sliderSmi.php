@@ -34,7 +34,7 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                             </div>
                         <?php else: ?>
                             <div class="smi-block-container__video">
-                                <video class="page__img" poster="" src="<?php echo $smiItem['link-video']; ?>"></video>
+                                <video class="page__img" poster="" src="<?php echo $slide['link-video']; ?>"></video>
                                 <div class="smi-block-container__video-description">
                                     <p class="page__text page__text_yellow date"><?php echo $smiItem['date']; ?></p>
                                     <p class="page__text page__text_white name"><?php echo $smiItem['title']; ?></p>
@@ -45,25 +45,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 
                         <?php endforeach;
                     endif; ?> 
-
-
-                                    <!-- ---Work Version--- -->
-                        <!-- <div class="smi-block-container__video">
-                            <video class="page__img" poster="<?php /*echo $slide['media']; ?>" src=""></video>
-                            <div class="smi-block-container__video-description">
-                                <p class="page__text page__text_yellow date"><?php echo $slide ['date']; ?></p>
-                                <p class="page__text page__text_white name"><?php echo $slide['title']; ?></p>
-                                <p class="page__text page__text_white name"><?php echo $slide['subtitle']; ?></p>
-                            </div>
-                        </div>
-                        
-                        <div class="smi-block-container__article">
-                            <img class="page__img" src="<?php echo $slide['media2']; ?>">
-                            <p class="page__text"><?php echo $slide['date2']; ?></p>
-                            <p class="page__text"><?php echo $slide['title2']; ?></p>
-                            <p class="page__text"><?php echo $slide['subtitle2']; */?></p>
-                        </div> -->
-                                    <!-- ---Work Version--- -->
 
                     </div>
                 </div>

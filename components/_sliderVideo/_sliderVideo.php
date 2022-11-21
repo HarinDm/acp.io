@@ -11,19 +11,7 @@ $blockACF = get_field('_sliderVideo');
 if (!empty($blockACF) && $blockACF["isShow"]) :
     $fieldsACF = $blockACF['fields'];
 	$slider = $fieldsACF['slider'];
-    // echo '<pre>';
-    // var_dump($slider);
-    // echo '</pre>';
 ?>
-
-
-<!-- 
-slides[повторитель]
-    -slides[повторитель]
-        -slide[поля]
-    -slide
-        -item
-    -slide -->
 
 <div class="page-items" id="sliderVideo">
     <?php if(!empty($slider )) : ?> 
@@ -34,12 +22,6 @@ slides[повторитель]
                         <?php if(!empty($slide['slider2'] )) : 
                             foreach($slide['slider2'] as $slide2) : 
 
-                               /* if(!empty($slide2['link'])){
-                                    $src = $slide2['link']; 
-                                }else{
-                                    $src = $slide2['video']; 
-                                }*/ 
-                                // $src = (!empty($slide2['link'])) ? $slide2['link'] : $slide2['video'];
                                 $iframe = 'code';                                
                             ?>
                             <?php if(!empty($slide2['link'])): ?>
@@ -50,7 +32,6 @@ slides[повторитель]
                                 </a>
                             <?php endif;?>
                               
-                          
                             <?php endforeach; 
                         endif; ?>  
                     </div>
@@ -58,23 +39,6 @@ slides[повторитель]
         <?php endforeach; 
         endif; ?>  
     <?php endif; ?>
-
-    <!-- <div class="video-item">
-        <div class="video-item-container">
-            <div class="page__img">
-                <video poster="assets/img/img-video-page.png" src=""></video>
-            </div>
-            <div class="page__img">
-                <video poster="assets/img/img-video-page.png" src=""></video>
-            </div>
-            <div class="page__img">
-                <video poster="assets/img/img-video-page.png" src=""></video>
-            </div>
-            <div class="page__img">
-                <video poster="assets/img/img-video-page.png" src=""></video>
-            </div>
-        </div>
-    </div> -->
 </div>
 <div class="slider sliderSmi page-nav">
     <div class="slider__actions">
@@ -87,14 +51,3 @@ slides[повторитель]
     </div>
 </div>
 <?php endif; ?>
-
-
-            <!-- <div class="page__img">
-                <video poster="<?php echo $slide['poster2']; ?>" src="<?php echo $slide['video2']; ?>"></video>
-            </div>
-            <div class="page__img">
-                <video poster="<?php echo $slide['poster3']; ?>" src="<?php echo $slide['video3']; ?>"></video>
-            </div>
-            <div class="page__img">
-                <video poster="<?php echo $slide['poster4']; ?>" src="<?php echo $slide['video4']; ?>"></video>
-            </div> -->

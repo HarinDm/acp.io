@@ -40,12 +40,6 @@ uasort($fields, 'cmp_function');
 ?>
 <!-- Tpl. Page -->
 <main class="page">
-    <?php  
-    /* 
-    $fieldACF =  get_field('_template');
-    var_dump($fieldACF);
-        */
-    ?>
 
     <?php foreach ($fields as $field => $value) {
         

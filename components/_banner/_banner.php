@@ -12,9 +12,7 @@ $fieldsACF = $blockACF['fields'];
 $title = $fieldsACF['title'];
 $description = $fieldsACF['description'];
 $slider = $fieldsACF['slider']; // array - массив /  если массив пустой то нужно делать проверку функция  empty cтавит логический оператор НЕ -> ! итого !empty($array) если он(массив) не пустой тогда выполняй код 
-// echo '<pre>';
-// var_dump($slider);
-// echo '</pre>';
+
 
 ?>
 <section class="banner">

@@ -16,10 +16,9 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 	<div class="wrapper">
 		<div class="about-block">
 			<div class="about-block-description">
-				<h3 class="page__title-h3"><?php echo $title ?></h3>
-				
-				<p class="page__text"> <?php echo $subtitle ?> </p>
-				<p class="page__text"> <?php echo $subtitle2 ?> </p>
+				<h3 class="page__title-h3"><?php echo $title; ?></h3>		
+				<p class="page__text"> <?php echo $subtitle; ?> </p>
+				<p class="page__text"> <?php echo $subtitle2; ?> </p>
 				<button class="page__btn page__btn_gray">подробнее</button>
 			</div>
 			<div class="about-block-experience">
@@ -34,20 +33,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 			<?php endforeach; 
 				endif;
 			?>
-				<!-- <div class="about-block-experience__item">
-					<span class="page__number">7</span>
-					<p class="page__text"> лет — приличный опыт</p>
-				</div>
-
-				<div class="about-block-experience__item"><span class="page__number">7</span>
-					<p class="page__text">городов</p>
-				</div>
-				<div class="about-block-experience__item"><span class="page__number">500+</span>
-					<p class="page__text">игр</p>
-				</div>
-				<div class="about-block-experience__item"><span class="page__number">200+</span>
-					<p class="page__text">корпоративов</p>
-				</div> -->
 			</div>
 		</div>
 	</div>
