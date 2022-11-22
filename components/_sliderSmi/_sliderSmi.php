@@ -42,10 +42,8 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
                                 </div>
                             </div>    
                         <?php endif;?>
-
                         <?php endforeach;
-                    endif; ?> 
-
+                            endif; ?> 
                     </div>
                 </div>
             <?php endforeach; 
